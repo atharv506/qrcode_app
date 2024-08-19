@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATER</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #152027;
+            
+            
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+        .image-container {
+            position: relative;
+            width: 70%; /* Adjust the width as needed */
+            max-width: 300px; /* Optional max-width for larger screens */
+            
+        }
+        .image-container img {
+            width: 100%; /* Make image responsive */
+            height: auto;
+            border-radius: 10px; /* Optional rounded corners */
+            box-shadow: 0 4px 8px rgba(13, 10, 10, 0.3); /* Optional shadow for better visibility */
+        
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="image-container">
+          <img src="data:image/png;base64,{{ qr_image_base64 }}" alt="QR Code">
+            </div>
+    
+
+  
+
+
+</body>
+
+
+   
+
+
+
+</html>
