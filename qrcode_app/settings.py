@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mskv)82lgy2fe7b&74o3&r!@dkr2-!1=jm!#-#_%t*!7fkk5w!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.json','.now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,12 +74,12 @@ WSGI_APPLICATION = 'qrcode_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-##DATABASES = {
-##    'default': {
-##        'ENGINE': 'django.db.backends.sqlite3',
-##        'NAME': BASE_DIR / 'db.sqlite3',
-##    }
-##}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
